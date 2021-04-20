@@ -7,6 +7,10 @@ const inquirer = require("inquirer");
 
 const Manager = require("./lib/Manager");
 
+// const path = path.join(OUTPUT_DIR, "team.html");
+
+
+
 const teamMembers = [];
 
 const questionsManager = [{
@@ -35,8 +39,8 @@ const questionsManager = [{
     message:"Do you want to add a team member? If yes, select their role.",
     choices: ["Engineer", "Intern", "I'm done."],
 }]
-/** FUNCTION DECLARATIONS ***************************/
 
+/** FUNCTION DECLARATIONS ***************************/
 const askEngineer =() =>{
     inquirer 
     .prompt([
@@ -96,6 +100,7 @@ const askIntern = () =>{
 const init = () => {
 
     inquirer.prompt(questionsManager).then((data) =>{
+        
 
         teamMembers.push(new Manager(data.name, data.id, data.email, data.officeNumber))
         if(data.members === "Engineer"){
@@ -107,9 +112,16 @@ const init = () => {
         else{
             //end function here and generateHTML
             generateHTML(teamMembers);
+            fs.writeFile('team.html', generateHTML(teamMembers));
+            
         }
     })
+    
 }
 
 /**FUNCTION CALLS*****************************/
 init();
+
+
+// generateHTML();
+
