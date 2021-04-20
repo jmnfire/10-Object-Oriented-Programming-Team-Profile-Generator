@@ -25,9 +25,31 @@ const generateManager = (data) => {
 </li>`;
 };
 
-const generateEngineer = (data) => {
-    return ``;
-};
+// const generateEngineer = (data) => {
+//     return ` <li>
+//     <div class="col-md-3">
+//     <div class="card cardbody">
+//     <div class="card-header font: text-white" style="background: blue">
+//                 ${data.name}<br>
+//                 <div class="fas fa-mug-hot">${data.getRole}</div>
+//                 </div>
+//     <div class="card-body">
+//         <form role="form">			
+//         <div class="form-group">
+//             <label  ${data.id}</label>
+//         </div>
+//         <div class="form-group">
+//             <label ${data.email}</label>
+//         </div>
+//         <div class="form-group">
+//             <label ${data.GitHub}</label>					
+//         </div>				
+//         </form>
+//     </div>
+//     </div>
+// </div>
+// </li>`;
+// };
 
 const generateIntern = (data) => {
     return ``;

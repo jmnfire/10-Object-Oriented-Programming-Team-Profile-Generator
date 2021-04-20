@@ -94,7 +94,9 @@ const askIntern = () =>{
             message: "Which type of team member would you like to add?",
             choices: ["Engineer", "Intern", "I'm done."]
         }
-    ])
+    ]).then(answers => {
+        console.log(answers);
+    })
 }
 
 const init = () => {
@@ -111,8 +113,8 @@ const init = () => {
         }
         else{
             //end function here and generateHTML
-            generateHTML(teamMembers);
-            fs.writeFile('team.html', generateHTML(teamMembers));
+            let data = generateHTML(teamMembers);
+            fs.writeFileSync('team.html', data, "utf-8");
             
         }
     })
@@ -123,5 +125,4 @@ const init = () => {
 init();
 
 
-// generateHTML();
 
