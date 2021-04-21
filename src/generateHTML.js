@@ -5,7 +5,7 @@ const generateManager = (data) => {
     <div class="card cardbody">
     <div class="card-header font: text-white" style="background: blue">
                 ${data.name}<br>
-                <div class="fas fa-mug-hot">${data.getRole}</div>
+                <div class="fas fa-mug-hot">${data.getRole()}</div>
                 </div>
     <div class="card-body">
         <form role="form">			
@@ -31,7 +31,7 @@ const generateEngineer = (data) => {
     <div class="card cardbody">
     <div class="card-header font: text-white" style="background: blue">
                 ${data.name}<br>
-                <div class="fas fa-mug-hot">${data.getRole}</div>
+                <div class="fas fa-glasses">${data.getRole()}</div>
                 </div>
     <div class="card-body">
         <form role="form">			
@@ -57,7 +57,7 @@ const generateIntern = (data) => {
     <div class="card cardbody">
     <div class="card-header font: text-white" style="background: blue">
                 ${data.name}<br>
-                <div class="fas fa-mug-hot">${data.getRole}</div>
+                <div class="fas fa-user-graduate">${data.getRole()}</div>
                 </div>
     <div class="card-body">
         <form role="form">			
