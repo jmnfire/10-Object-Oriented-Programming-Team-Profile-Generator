@@ -1,6 +1,7 @@
 const generateManager = (data) => {
     //data.name data.id data.email data.officeNumber
-    return `  <li>
+    return ` <div class='container'>
+    <ul class="ul"> <li>
     <div class="col-md-3">
     <div class="card cardbody">
     <div class="card-header font: text-white" style="background: blue">
@@ -10,13 +11,13 @@ const generateManager = (data) => {
     <div class="card-body">
         <form role="form">			
         <div class="form-group">
-            ${data.id}
+        <p> <b>Id:</b> ${data.id}</p>
         </div>
         <div class="form-group">
-            ${data.email}
+            <p> <b>Email:</b> ${data.email}</p>
         </div>
         <div class="form-group">
-            ${data.officeNumber}					
+            <p> <b>Office Number:</b> ${data.officeNumber} </p>				
         </div>				
         </form>
     </div>
@@ -26,7 +27,8 @@ const generateManager = (data) => {
 };
 
 const generateEngineer = (data) => {
-    return ` <li>
+    return ` <div class='container'>
+    <ul class="ul"><li>
     <div class="col-md-3">
     <div class="card cardbody">
     <div class="card-header font: text-white" style="background: blue">
@@ -36,13 +38,13 @@ const generateEngineer = (data) => {
     <div class="card-body">
         <form role="form">			
         <div class="form-group">
-            ${data.id}
+        <p> <b>Id:</b>  ${data.id}</p>
         </div>
         <div class="form-group">
-            ${data.email}
+        <p> <b>Email:</b> ${data.email}</p>
         </div>
         <div class="form-group">
-            ${data.gitHub}				
+            <p><b>GitHub User Name:</b> ${data.gitHub}</p>				
         </div>				
         </form>
     </div>
@@ -52,7 +54,8 @@ const generateEngineer = (data) => {
 };
 
 const generateIntern = (data) => {
-    return `<li>
+    return `<div class='container'>
+    <ul class="ul"><li>
     <div class="col-md-3">
     <div class="card cardbody">
     <div class="card-header font: text-white" style="background: blue">
@@ -62,13 +65,13 @@ const generateIntern = (data) => {
     <div class="card-body">
         <form role="form">			
         <div class="form-group">
-            ${data.id}
+        <p> <b>Id:</b>  ${data.id}</p>
         </div>
         <div class="form-group">
-            ${data.email}
+        <p> <b>Email:</b> ${data.email}</p>
         </div>
         <div class="form-group">
-            ${data.school}					
+            <p><b>School:</b> ${data.school}<p/>					
         </div>				
         </form>
     </div>
@@ -78,7 +81,7 @@ const generateIntern = (data) => {
 };
 
 const generateCards = (data) => {
-    let htmlString ="";
+    let htmlString = "";
     //data will be an array of Employees (Manager/Intern/Engineer)
     data.forEach((element) => {
         console.log(element)
@@ -86,21 +89,17 @@ const generateCards = (data) => {
         if (element.getRole() === "Manager") {
             let string = generateManager(element);
             htmlString += string;
-        } 
-        else if 
-            (element.getRole() === "Engineer") {
-                let string = generateEngineer(element);
-                htmlString += string; 
-                
-        } 
-        else if 
-            (element.getRole() === "Intern") {
+        } else if (element.getRole() === "Engineer") {
+            let string = generateEngineer(element);
+            htmlString += string;
+
+        } else if (element.getRole() === "Intern") {
             let string = generateIntern(element);
             htmlString += string;
         }
     });
     return htmlString;
-    
+
 };
 
 
@@ -113,6 +112,7 @@ const generateHTML = (data) => {
         <title>Document</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/ba0d43019a.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./dist/style.css">
     </head>
     <body>
     <div class="jumbotron jumbotron-fluid" style='background-color: red;'>
