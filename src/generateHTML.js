@@ -14,7 +14,7 @@ const generateManager = (data) => {
         <p> <b>Id:</b> ${data.id}</p>
         </div>
         <div class="form-group">
-            <p> <b>Email:</b> ${data.email}</p>
+        <p> <b>Email:</b> <a href="mailto:${data.email}">${data.email}</a></p>
         </div>
         <div class="form-group">
             <p> <b>Office Number:</b> ${data.officeNumber} </p>				
@@ -41,10 +41,10 @@ const generateEngineer = (data) => {
         <p> <b>Id:</b>  ${data.id}</p>
         </div>
         <div class="form-group">
-        <p> <b>Email:</b> ${data.email}</p>
+        <p> <b>Email:</b> <a href="mailto:${data.email}">${data.email}</a></p>
         </div>
         <div class="form-group">
-            <p><b>GitHub User Name:</b> ${data.gitHub}</p>				
+            <p><b>GitHub User Name:</b> <a href="https://github.com/${data.gitHub}">${data.gitHub}</a></p>				
         </div>				
         </form>
     </div>
@@ -68,7 +68,7 @@ const generateIntern = (data) => {
         <p> <b>Id:</b>  ${data.id}</p>
         </div>
         <div class="form-group">
-        <p> <b>Email:</b> ${data.email}</p>
+        <<p> <b>Email:</b> <a href="mailto:${data.email}">${data.email}</a></p>
         </div>
         <div class="form-group">
             <p><b>School:</b> ${data.school}<p/>					
