@@ -68,7 +68,7 @@ const generateIntern = (data) => {
         <p> <b>Id:</b>  ${data.id}</p>
         </div>
         <div class="form-group">
-        <<p> <b>Email:</b> <a href="mailto:${data.email}">${data.email}</a></p>
+        <p> <b>Email:</b> <a href="mailto:${data.email}">${data.email}</a></p>
         </div>
         <div class="form-group">
             <p><b>School:</b> ${data.school}<p/>					

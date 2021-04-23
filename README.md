@@ -12,10 +12,11 @@ This Node CLI builds a team displaying HTML file for a user based on their input
 5. [Contributing](#Contributing)
 6. [Tests](#Tests)
 7. [Questions](#Questions)
-8. [Badges](#Badges)
+8. [Demo](#Demo)
+9. [Badges](#Badges)
 
 # Installation
-Run node.js and perform an npm install to bring in all necessary node modules. The program is run with the command "node index.js"
+Run node.js and perform an npm install to bring in all necessary node modules. The program is ran with the command "node index.js"
 # Usage
 When generator starts answer question prompts to customize HTML-TEAM
 # License
@@ -37,7 +38,7 @@ https://github.com/jmnfire/10-Object-Oriented-Programming-Team-Profile-Generator
 ### Email address 
 jovan.m.nixon@gmail.com
 # Demo
-![Demo of README](./Develop/assets/image/README.gif)
+![Demo of README](./screenshots/myteam1-1.gif)
 
 # Badges
 
