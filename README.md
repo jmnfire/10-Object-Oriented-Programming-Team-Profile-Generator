@@ -38,7 +38,11 @@ https://github.com/jmnfire/10-Object-Oriented-Programming-Team-Profile-Generator
 ### Email address 
 jovan.m.nixon@gmail.com
 # Demo
+## Using application from the command line and generating an HTML
 ![Demo of README](./screenshots/myteam1-1.gif)
+
+## Demo of all 4 tests passing 
+![Demo of README](./screenshots/runtest.gif)
 
 # Badges
 
